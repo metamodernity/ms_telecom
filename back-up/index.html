@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MS-TELECOM</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link type="Image/x-icon" href="img/ultra_logo.png" rel="shortcut icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MS-TELECOM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="autorization_form.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Тарифы
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#zatemnenie">"СТАРТ"</a></li>
+              <li><a class="dropdown-item" href="#zatemnenie_two">"ОПТИУМ"</a></li>
+              <li><a class="dropdown-item" href="#zatemnenie_three">"МЕГА"</a></li>
+              <li><a class="dropdown-item" href="#zatemnenie_four">"УЛЬТРА"</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#zatemnenie_five">"INET-1"</a></li>
+              <li><a class="dropdown-item" href="#zatemnenie_six">"INET-2"</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link" href="info.html">Информация</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link" href="mailto:info@mstlc.ru">info@mstlc.ru</a>
+          </li>
+          <li class="nav-item d-flex">
+            <a class=" phone nav-link" aria-current="page" href="tel:88003008463">8-800-300-84-63</a>
+          </li>
+          <!--место для добавления новых элементов-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <article>
+    <br>
+    <br>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/first_slide.jpg" class="d-block w-100" alt="img">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>"СТАРТ"</h5>
+          <p>490руб./мес</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/two_slide.JPG" class="d-block w-100" alt="img">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>"ОПТИУМ"</h5>
+          <p>590руб./мес</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/three_slide.JPG" class="d-block w-100" alt="img">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>"МЕГА"</h5>
+          <p>790руб./мес</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/four_slide.JPG" class="d-block w-100" alt="img">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>"УЛЬТРА"</h5>
+          <p>1190руб./мес</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+  <div class="sign">
+  <center><h1>НАШИ ПРЕДЛОЖЕНИЯ</h1></center>
+    <!--hr class="hr-shadow"-->
+  </div>
+  <div class="cards-group" id = "crd">
+    <center><h2>ТЕХНОЛОГИЯ GPON (ЧАСТНЫЕ ДОМОХОЗЯЙСТВА)</h2></center>
+  <div class="row" style="width: 100%;">
+    <div class="col-sm-6" id="one" style=" margin-left: 1%; width: 24rem;">
+      <div class="card border-dark">
+        <img src="img/start_logo.png" class="card-img-top" alt="img/black.png">
+        <div class="card-body">
+          <h5 class="card-title">"СТАРТ"</h5>
+          <h6 class="card-text">490руб./мес</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Новокуйбышевск:</li>
+            <li class="list-group-item">Чапаевск:</li>
+            <li class="list-group-item">Гранный:</li>
+          </ul>
+          <a class="btn btn-primary" href="#zatemnenie" onclick="telephoneFunc()">ПОДКЛЮЧИТЬ</a>
+          <div id="zatemnenie">
+            <div id="okno">
+              <h6 style="color: black;">Подключить "СТАРТ!"<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
+              <hr style="margin-top: -5%;">
+  <div class="gorod">
+    <div class="content" id="city"> Выберите населённый пункт:<br>
+      <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
+      <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech').hidden = !this.checked;">Чапаевск
+    </div>
+  
+    <div hidden class="content" id="tech"> Объект: 
+      <input name="tech" type="radio" value="Частный сектор">Частный сектор
+      <input name="tech" type="radio" value="МКД">Многоквартирный дом
+    </div>
+    <!--a>Скорость доступа</a><select-- name="speed">
+      <option value="1">50</option>
+      <option value="2">80</option>
+      <option value="3">100</option>
+      <option value="4">500</option>
+    </select-->
+    <br>
+    <div class="str">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="one-fio">Фамилия Имя Отчество</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="one-tel">Контактный телефон &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="one-mail">Электронная почта &nbsp;  &nbsp; &nbsp; &nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="one-adr">Адрес подключения &nbsp; &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+  </div>
+	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
+	<div style="margin: 1em 0px;">
+	</div>
+	<button class="send" id="send" disabled>Подключить!</button>
+  </div>
+  <br>
+  <div class="manager">
+    <button onclick="myFunction()">Доп. информация</button>
+  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" id="three" style=" margin-left: -1%; width: 24rem;">
+      <div class="card border-dark">
+        <img src="img/optium_logo.png" class="card-img-top" alt="img/black.png">
+        <div class="card-body">
+          <h5 class="card-title">"ОПТИУМ"</h5>
+          <h6 class="card-text">790руб./мес</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Новокуйбышевск:</li>
+            <li class="list-group-item">Чапаевск:</li>
+            <li class="list-group-item">Гранный:</li>
+          </ul>
+          <a class="btn btn-primary" href="#zatemnenie_two" onclick="telephoneFunc()">ПОДКЛЮЧИТЬ</a>
+          <div id="zatemnenie_two">
+            <div id="okno">
+              <h6 style="color: black;">Подключить "ОПТИУМ"!<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
+              <hr style="margin-top: -5%;">
+  <div class="gorod">
+    <div class="content" id="city"> Выберите населённый пункт:<br>
+      <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_three').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
+      <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_three').hidden = !this.checked;">Чапаевск
+    </div>
+  
+    <div hidden class="content" id="tech_three"> Объект: 
+      <input name="tech" type="radio" value="Частный сектор">Частный сектор
+      <input name="tech" type="radio" value="МКД">Многоквартирный дом
+    </div>
+    <!--a>Скорость доступа</!--a><select-- name="speed">
+      <option value="1">50</option>
+      <option value="2">80</option>
+      <option value="3">100</option>
+      <option value="4">500</option>
+    </select-->
+    <br>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="two-fio">Фамилия Имя Отчество</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="two-tel">Контактный телефон &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="two-mail">Электронная почта &nbsp;  &nbsp; &nbsp; &nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="two-adr">Адрес подключения &nbsp; &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_three').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
+	<div style="margin: 1em 0px;">
+	</div>
+	<button class="send" id="send_two" disabled>Подключить!</button>
+  </div>
+  <br>
+  <div class="manager">
+    <button onclick="myFunction()">Доп. информация</button>
+  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" id="three" style=" margin-left: -1%; width: 24rem;">
+      <div class="card border-dark">
+        <img src="img/mega_logo.png" class="card-img-top" alt="img/black.png">
+        <div class="card-body">
+          <h5 class="card-title">"МЕГА"</h5>
+          <h6 class="card-text">790руб./мес</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Новокуйбышевск:</li>
+            <li class="list-group-item">Чапаевск:</li>
+            <li class="list-group-item">Гранный:</li>
+          </ul>
+          <a class="btn btn-primary" href="#zatemnenie_three" onclick="telephoneFunc()">ПОДКЛЮЧИТЬ</a>
+          <div id="zatemnenie_three">
+            <div id="okno">
+              <h6 style="color: black;">Подключить "МЕГА"!<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
+              <hr style="margin-top: -5%;">
+  <div class="gorod">
+    <div class="content" id="city"> Выберите населённый пункт:<br>
+      <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_three').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
+      <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_three').hidden = !this.checked;">Чапаевск
+    </div>
+  
+    <div hidden class="content" id="tech_three"> Объект: 
+      <input name="tech" type="radio" value="Частный сектор">Частный сектор
+      <input name="tech" type="radio" value="МКД">Многоквартирный дом
+    </div>
+    <!--a>Скорость доступа</!--a><select-- name="speed">
+      <option value="1">50</option>
+      <option value="2">80</option>
+      <option value="3">100</option>
+      <option value="4">500</option>
+    </select-->
+    <br>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="three-fio">Фамилия Имя Отчество</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="three-tel">Контактный телефон &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="three-mail">Электронная почта &nbsp;  &nbsp; &nbsp; &nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="three-adr">Адрес подключения &nbsp; &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_three').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
+	<div style="margin: 1em 0px;">
+	</div>
+	<button class="send" id="send_three" disabled>Подключить!</button>
+  </div>
+  <br>
+  <div class="manager">
+    <button onclick="myFunction()">Доп. информация</button>
+  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" id="four" style=" margin-left: -1%; width: 24rem">
+      <div class="card border-dark">
+        <img src="img/ultra_logo.png" class="card-img-top" alt="img/black.png">
+        <div class="card-body">
+          <h5 class="card-title">"УЛЬТРА"</h5>
+          <h6 class="card-text">1190руб./мес</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Новокуйбышевск:</li>
+            <li class="list-group-item">Чапаевск:</li>
+            <li class="list-group-item">Гранный:</li>
+          </ul>
+          <a class="btn btn-primary" href="#zatemnenie_four"onclick="telephoneFunc()">ПОДКЛЮЧИТЬ</a>
+          <div id="zatemnenie_four">
+            <div id="okno">
+              <h6 style="color: black;">Подключить "УЛЬТРА"!<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
+              <hr style="margin-top: -5%;">
+  <div class="gorod">
+    <div class="content" id="city"> Выберите населённый пункт:<br>
+      <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_four').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
+      <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_four').hidden = !this.checked;">Чапаевск
+    </div>
+  
+    <div hidden class="content" id="tech_four"> Объект: 
+      <input name="tech" type="radio" value="Частный сектор">Частный сектор
+      <input name="tech" type="radio" value="МКД">Многоквартирный дом
+    </div>
+    <!--a>Скорость доступа</a><select-- name="speed">
+      <option value="1">50</option>
+      <option value="2">80</option>
+      <option value="3">100</option>
+      <option value="4">500</option>
+    </select-->
+    <br>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="four-fio">Фамилия Имя Отчество</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="four-tel">Контактный телефон &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="four-mail">Электронная почта &nbsp;  &nbsp; &nbsp; &nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="four-adr">Адрес подключения &nbsp; &nbsp; &nbsp;&nbsp;</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_four').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
+	<div style="margin: 1em 0px;">
+	</div>
+	<button class="send" id="send_four" disabled>Подключить!</button>
+  </div>
+  <br>
+  <div class="manager">
+    <button onclick="myFunction()">Доп. информация</button>
+  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<center><h2 style="">ТЕХНОЛОГИЯ FTTB (МНОГОКВАРТИРНЫЕ ДОМА)</h2></center>
+  <div class="row" style="width: 90%; margin-left:7%">
+    <!--div class="col-sm-6" style="">
+      <div class="card border-dark">
+        <img src="img/inet_1.png" class="card-img-top" alt="img/black.png">
+        <div class="card-body">
+          <h5 class="card-title">"INET-1"</h5>
+          <p class="card-text" style="color: black;">300руб./мес</p>
+          <a href="#" class="btn btn-primary">ПОДКЛЮЧИТЬ</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" style="">
+      <div class="card border-dark">
+        <img src="img/inet_2.png" class="card-img-top" alt="img/black.png">
+        <div class="card-body">
+          <h5 class="card-title">"INET-2"</h5>
+          <p class="card-text" style="color: black;">250руб./мес</p>
+          <a href="#" class="btn btn-primary">ПОДКЛЮЧИТЬ</a>
+        </div>
+      </div>
+    </div>
+  </div-->
+  <div class="col-sm-6" id="five">
+    <div class="card border-dark">
+      <img src="img/inet_1.png" class="card-img-top" alt="img/black.png">
+      <div class="card-body">
+        <h5 class="card-title">"INET-1"</h5>
+        <h6 class="card-text">300руб./мес</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Новокуйбышевск:</li>
+          <li class="list-group-item">Чапаевск:</li>
+          <li class="list-group-item">Гранный:</li>
+        </ul>
+        <a class="btn btn-primary" href="#zatemnenie_five" onclick="telephoneFunc()">ПОДКЛЮЧИТЬ</a>
+        <div id="zatemnenie_five">
+          <div id="okno">
+            <h6 style="color: black;">Подключить "INET-1!"<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
+            <hr style="margin-top: -5%;">
+<div class="gorod">
+  <div class="content" id="city"> Выберите населённый пункт:<br>
+    <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_five').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
+    <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_five').hidden = !this.checked;">Чапаевск
+  </div>
+  <div hidden class="content" id="tech_five"> Объект: 
+    <input name="tech" type="radio" value="Частный сектор">Частный сектор
+    <input name="tech" type="radio" value="МКД">Многоквартирный дом
+  </div>
+  <!--a>Скорость доступа</a><select-- name="speed">
+    <option value="1">50</option>
+    <option value="2">80</option>
+    <option value="3">100</option>
+    <option value="4">500</option>
+  </select-->
+  <br>
+  <div class="str">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="five-fio">Фамилия Имя Отчество</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="five-tel">Контактный телефон &nbsp; &nbsp;&nbsp;</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="five-mail">Электронная почта &nbsp;  &nbsp; &nbsp; &nbsp;</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="five-adr">Адрес подключения &nbsp; &nbsp; &nbsp;&nbsp;</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+</div>
+<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
+<div style="margin: 1em 0px;">
+</div>
+<button class="send" id="send" disabled>Подключить!</button>
+</div>
+<br>
+<div class="manager">
+  <button onclick="myFunction()">Доп. информация</button>
+</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" id="six" style="">
+    <div class="card border-dark">
+      <img src="img/inet_2.png" class="card-img-top" alt="img/black.png">
+      <div class="card-body">
+        <h5 class="card-title">"INET-2"</h5>
+        <h6 class="card-text">300руб./мес</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Новокуйбышевск:</li>
+          <li class="list-group-item">Чапаевск:</li>
+          <li class="list-group-item">Гранный:</li>
+        </ul>
+        <a class="btn btn-primary" href="#zatemnenie_six" onclick="telephoneFunc()">ПОДКЛЮЧИТЬ</a>
+        <div id="zatemnenie_six">
+          <div id="okno">
+            <h6 style="color: black;">Подключить "INET-2!"<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
+            <hr style="margin-top: -5%;">
+<div class="gorod">
+  <div class="content" id="city"> Выберите населённый пункт:<br>
+    <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_six').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
+    <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_six').hidden = !this.checked;">Чапаевск
+  </div>
+
+  <div hidden class="content" id="tech_six"> Объект: 
+    <input name="tech" type="radio" value="Частный сектор">Частный сектор
+    <input name="tech" type="radio" value="МКД">Многоквартирный дом
+  </div>
+  <!--a>Скорость доступа</a><select-- name="speed">
+    <option value="1">50</option>
+    <option value="2">80</option>
+    <option value="3">100</option>
+    <option value="4">500</option>
+  </select-->
+  <br>
+  <div class="str">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="six-fio">Фамилия Имя Отчество</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="six-tel">Контактный телефон &nbsp; &nbsp;&nbsp;</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="six-mail">Электронная почта &nbsp;  &nbsp; &nbsp; &nbsp;</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="six-adr">Адрес подключения &nbsp; &nbsp; &nbsp;&nbsp;</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+</div>
+<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
+<div style="margin: 1em 0px;">
+</div>
+<button class="send" id="send" disabled>Подключить!</button>
+</div>
+<br>
+<div class="manager">
+  <button onclick="myFunction()">Доп. информация</button>
+</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--hr class="hr-shadow"-->
+  <div class="binary"><!--Сделать отступ-->
+<center><h2 style="margin-top: 2%;">ЦИФРОВОЕ ТВ</h2></center>
+  <h3 class="j" style="color: black; margin-left: 1%;">Совместно с нашим партнёром <a href=https://smotreshka.tv>«Смотрёшка»</a> мы предлагаем нашим абонентам услуги телевидения IPTV, которые включают в себя более 280 телевизионных каналов, архив до 14 дней, возможность ставить просмотр на паузу и перематывать, а также доступ к онлайн-кинотеатру.</p>
+  <h3 class="j" style="color: black; margin-left: 1%;">Вы можете пользоваться сервисом смотрёшка на любом совместимом телевизоре с функцией Smart-TV (LG, Samsung) либо Android TV, Apple TV, а также на любом телевизоре, используя IPTV-приставку на базе ОС Android.</p>
+  <h3 class="j" style="color: black; margin-left: 1%;">Стоимость подключения услуги составляет 199 руб. за пакет из 230 каналов.
+  Возможность подлючения дополнительных пакетов уточняйте по телефону <div class=phone><a href="tel:88003008463">8-800-300-84-63</a>.</div>
+  </div>
+<center><h2>СПОСОБЫ ОПЛАТЫ</h2></center>
+  <div class="content-container">
+    <div class="content-block">
+      <div class="content">
+        <p class="j" style="color: black; font-size: 25px; margin-left: 1%;">Вы можете оплатить наши услуги в <a href="autorization_form.html">Личном кабинете</a> следующими способами:</p>
+  <ul>
+    <li style="font-size: 20px; margin-left: 1%;">Банковской картой</li>
+    <li style="font-size: 20px; margin-left: 1%;">Системы электронных платежей: QIWI, ЮMoney и др.</li>
+    <li style="font-size: 20px; margin-left: 1%;">Банковским переводом по реквизитам</li>
+  </ul>
+      </div>
+    </div>
+  </div>
+</article>
+<footer>
+  <div class="text" style="height: 250px; background-color: rgb(26, 26, 26);">
+    <p style="margin-left: 1%;"> ООО «МС-Телеком», 2022</p>
+    <p style="margin-left: 1%;">E-mail:<a href="mailto:info@mstlc.ru">info@mstlc.ru</a></p>
+    <div class=phone style="margin-left: 1%;"><p>Подключение: <a href="tel:88003008463">8-800-300-84-63</a></p></div>
+    <div class=phone style="margin-left: 1%;"><p>Техническая поддержка: <a href="tel:88003008463">8-800-300-84-63</a></p></div>
+    <p style="margin-left: 1%;">Адрес организации: 446100, Самарская обл., г. Чапаевск, ул. Куйбышева, д. 11 А</p>
+    <p style="margin-left: 1%;"><a href="info.html">Подробная информация</a></p>
+  </div>
+</footer>
+<script src="JS/mobile.js"></script>
+<script src="JS/dop_info.js"></script>
+<script src="JS/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
