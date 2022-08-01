@@ -162,7 +162,7 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send" disabled>Подключить!</button>
+	<button class="send" id="send_one" disabled onclick="swal('Завяка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
   </div>
   <br>
   <div class="manager">
@@ -228,7 +228,7 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_two').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_two" disabled>Подключить!</button>
+	<button class="send" id="send_two" disabled onclick="swal('Завяка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
   </div>
   <br>
   <div class="manager">
@@ -293,7 +293,7 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_three').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_three" disabled>Подключить!</button>
+	<button class="send" id="send_three" disabled onclick="swal('Завяка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
   </div>
 </div>
   <br>
@@ -360,7 +360,7 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_four').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_four" disabled>Подключить!</button>
+	<button class="send" id="send_four" disabled onclick="swal('Завяка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
   </div>
   <br>
   <div class="manager">
@@ -450,7 +450,7 @@
 <label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_five').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 <div style="margin: 1em 0px;">
 </div>
-<button class="send" id="send_five" disabled>Подключить!</button>
+<button class="send" id="send_five" disabled onclick="swal('Завяка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
 </div>
 <br>
 <div class="manager">
@@ -516,7 +516,7 @@
 <label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_six').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 <div style="margin: 1em 0px;">
 </div>
-<button class="send" id="send_six" disabled>Подключить!</button>
+<button class="send" id="send_six" disabled onclick="swal('Завяка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
 </div>
 <br>
 <div class="manager">
@@ -562,6 +562,8 @@
     <p style="margin-left: 1%;"><a href="info.html">Подробная информация</a></p>
   </div>
 </footer>
+<script src="JS/success.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="JS/dop_info.js"></script>
 <script src="JS/index.js"></script>
 <script src="JS/darkmode.js"></script>
