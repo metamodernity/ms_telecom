@@ -1,4 +1,4 @@
-@media (min-width: 0px) and (max-width: 1024px) { 
+@media (min-width: 320px) and (max-width: 768px) { 
 #opening {
   width: 300%;
 }
@@ -37,6 +37,9 @@ p{
 .cards-group{
   margin-left: 5%;
 }
+#crd{
+  margin-left: 7%;
+}
 .send{
   margin-top: 100%;
 }
@@ -50,8 +53,10 @@ p{
 .cards-group{
   margin-left: 1%;
 }
+
 #one, #two, #three, #four{
   width: 24rem;
+  margin-top: 2%;
 }
 .btn-primary{
   margin-top:12%;
@@ -351,3 +356,13 @@ option{
   background: #fff;
 }
 #opening_six:target {display: block;}
+/*скроллбар*/
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background: #00A3FF;
+}
