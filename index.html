@@ -124,7 +124,7 @@
             <div id="okno">
               <h6 style="color: black;">Подключить "СТАРТ!"<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -15%;"></image></a></h6>
               <hr style="margin-top: -5%;">
-  <div class="gorod">
+  <form class="gorod" onsubmit="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">
     <div class="content" id="city"> Выберите населённый пункт:<br>
       <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
       <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech').hidden = !this.checked;">Чапаевск
@@ -162,8 +162,8 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_one').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_one" disabled onclick="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
-  </div>
+	<input type="submit" class="send" id="send_one" value="Подключить!" disabled></input>
+  </form>
   <br>
   <div class="manager">
     <button onclick="myFunction()">Доп. информация</button>
@@ -190,7 +190,7 @@
             <div id="okno">
               <h6 style="color: black;">Подключить "ОПТИУМ"!<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
               <hr style="margin-top: -5%;">
-  <div class="gorod">
+  <form class="gorod" onsubmit="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">
     <div class="content" id="city"> Выберите населённый пункт:<br>
       <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_two').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
       <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_two').hidden = !this.checked;">Чапаевск
@@ -228,8 +228,8 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_two').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_two" disabled onclick="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
-  </div>
+	<input type="submit" class="send" id="send_two" value="Подключить!" disabled></input>
+  </form>
   <br>
   <div class="manager">
     <button onclick="myFunction()">Доп. информация</button>
@@ -256,7 +256,7 @@
             <div id="okno">
               <h6 style="color: black;">Подключить "МЕГА"!<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
               <hr style="margin-top: -5%;">
-  <div class="gorod">
+  <form class="gorod" onsubmit="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">
     <div class="content" id="city"> Выберите населённый пункт:<br>
       <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_three').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
       <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_three').hidden = !this.checked;">Чапаевск
@@ -293,9 +293,9 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_three').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_three" disabled onclick="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
+	<input type="submit" class="send" id="send_three" value="Подключить!" disabled></input>
   </div>
-</div>
+  </form>
   <br>
   <div class="manager">
     <button onclick="myFunction()">Доп. информация</button>
@@ -322,7 +322,7 @@
             <div id="okno">
               <h6 style="color: black;">Подключить "УЛЬТРА"!<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
               <hr style="margin-top: -5%;">
-  <div class="gorod">
+  <form class="gorod" onsubmit="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">
     <div class="content" id="city"> Выберите населённый пункт:<br>
       <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_four').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
       <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_four').hidden = !this.checked;">Чапаевск
@@ -360,8 +360,8 @@
 	<label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_four').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 	<div style="margin: 1em 0px;">
 	</div>
-	<button class="send" id="send_four" disabled onclick="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
-  </div>
+	<input type="submit" class="send" id="send_four" value="Подключить!" disabled></input>
+  </form>
   <br>
   <div class="manager">
     <button onclick="myFunction()">Доп. информация</button>
@@ -413,7 +413,7 @@
           <div id="okno">
             <h6 style="color: black;">Подключить "INET-1!"<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
             <hr style="margin-top: -5%;">
-<div class="gorod">
+<form class="gorod" onsubmit="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">
   <div class="content" id="city"> Выберите населённый пункт:<br>
     <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_five').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
     <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_five').hidden = !this.checked;">Чапаевск
@@ -450,8 +450,8 @@
 <label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_five').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 <div style="margin: 1em 0px;">
 </div>
-<button class="send" id="send_five" disabled onclick="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
-</div>
+<input type="submit" class="send" id="send_five" value="Подключить!" disabled></input>
+</form>
 <br>
 <div class="manager">
   <button onclick="myFunction()">Доп. информация</button>
@@ -478,7 +478,7 @@
           <div id="okno">
             <h6 style="color: black;">Подключить "INET-2!"<a id="x" href="#"><image src="img/x-lg.svg" style="width: 18px; height: 18px; margin-left: 95%; margin-top: -10%;"></image></a></h6>
             <hr style="margin-top: -5%;">
-<div class="gorod">
+<form class="gorod" onsubmit="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">
   <div class="content" id="city"> Выберите населённый пункт:<br>
     <input name="city" type="radio" value="Новокуйбышевск" onclick="document.getElementById('tech_six').hidden = this.checked;"> Новокуйбышевск (в т.ч. Гранный)<br>
     <input name="city" type="radio" value="Чапаевск" onclick="document.getElementById('tech_six').hidden = !this.checked;">Чапаевск
@@ -516,8 +516,8 @@
 <label for="agreement"><input type="checkbox" id="agreement" onchange="document.getElementById('send_six').disabled = !this.checked; document.getElementById('warning').hidden = this.checked;">&nbsp;<span style="width: 40%;">Я согласен/согласна на обработку моих персональных данных, с <a href="privacy" style="font-size: 14px; color: blue;">политикой конфиденциальности</a> и <a href="docs" style="font-size: 14px; color: blue;">условиями оказания услуг</a> полностью ознакомлен/ознакомлена!</span></label>
 <div style="margin: 1em 0px;">
 </div>
-<button class="send" id="send_six" disabled onclick="swal('Заявка отправлена!','Наш менеджер скоро с вами свяжется','success')">Подключить!</button>
-</div>
+<input type="submit" class="send" id="send_six" value="Подключить!" disabled></input>
+</form>
 <br>
 <div class="manager">
   <button onclick="myFunction()">Доп. информация</button>
